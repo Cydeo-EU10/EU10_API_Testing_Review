@@ -43,6 +43,8 @@ public class JsonPathReview {
 
     }
 
+    
+    // zipcode get by post code
     @Test
     public void test3(){
 
@@ -50,8 +52,39 @@ public class JsonPathReview {
                 .when().get("https://api.zippopotam.us/us/90210");
 
         JsonPath jsonPath = response.jsonPath();
+        response.prettyPrint();
+
+        String state = jsonPath.getString("places[0].state");
+        System.out.println(state);
 
         String countryAbb = jsonPath.getString("country");
         System.out.println(countryAbb);
+    }
+    
+    //    // zipcode get by city name
+    @Test
+    public void test4(){
+        Response response = RestAssured.given().accept(ContentType.JSON)
+                .when().get("https://api.zippopotam.us/us/ma/belmont");
+
+        response.prettyPrint();
+        JsonPath jsonPath = response.jsonPath();
+        String state = jsonPath.getString("state");
+        System.out.println(state);
+
+        String longitude = jsonPath.getString("places[0].longitude");
+        System.out.println(longitude);
+
+        String latitude = jsonPath.getString("places[1].latitude");
+        System.out.println(latitude);
+    }
+
+    // book store api
+    @Test
+    public void test5(){
+        Response response = RestAssured.given().accept(ContentType.JSON)
+                .when().get("https://demoqa.com/BookStore/v1/Books");
+
+        response.prettyPrint();
     }
 }
