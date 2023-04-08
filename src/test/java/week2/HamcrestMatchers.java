@@ -1,5 +1,8 @@
 package week2;
 
+import io.restassured.*;
+import io.restassured.http.*;
+import io.restassured.response.*;
 import org.hamcrest.*;
 import org.junit.jupiter.api.*;
 
@@ -37,8 +40,16 @@ public class HamcrestMatchers {
         List<Integer> numbers = Arrays.asList(3,4,5,6);
         assertThat(numbers,everyItem(greaterThan(0)));
 
+    }
 
-
-
+    @Test
+    public void test2(){
+        RestAssured.given().accept(ContentType.JSON)
+                .when().get("http://3.216.30.92:8000/api/spartans/1")
+                .then().statusCode(200)
+                .and().header("Content-Type",is("application/json"))
+                .and().body("id",is(1),
+                        "name",equalTo("Meade"),
+                        "gender",not("Female"));
     }
 }
