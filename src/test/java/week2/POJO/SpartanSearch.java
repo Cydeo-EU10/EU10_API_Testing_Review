@@ -11,7 +11,7 @@ public class SpartanSearch {
 
     // response.path   and jsonpath
 
-    @JsonProperty("content spartan")
+    @JsonProperty("content")
     private List<Spartan> content;
 
     @JsonProperty("totalElement")

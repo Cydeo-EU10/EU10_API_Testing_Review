@@ -89,5 +89,13 @@ public class JsonToJavaObject extends TestBase {
         System.out.println(spartanNameDa);
     }
 
+    @Test
+    public void test6(){
+        Response response = RestAssured.given().accept(ContentType.JSON)
+                .get("http://3.216.30.92:1000/ords/hr/regions");
+
+        response.prettyPrint();
+    }
+
 
 }
