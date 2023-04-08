@@ -85,6 +85,21 @@ public class JsonPathReview {
         Response response = RestAssured.given().accept(ContentType.JSON)
                 .when().get("https://demoqa.com/BookStore/v1/Books");
 
-        response.prettyPrint();
+//        response.prettyPrint();
+
+        JsonPath jsonPath = response.jsonPath();
+        int pageNum = jsonPath.getInt("books[0].pages");
+
+        String isbn = jsonPath.getString("books[2].isbn");
+
+        String link = jsonPath.getString("books[-1].website");
+        System.out.println(link);
+
+        List<Object> books = jsonPath.getList("books");
+        System.out.println(books.size());
+
+        int booksCount = jsonPath.getList("books.isbn").size();
+        System.out.println(booksCount);
+
     }
 }
