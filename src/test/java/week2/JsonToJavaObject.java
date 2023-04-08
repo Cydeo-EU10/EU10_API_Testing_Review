@@ -101,7 +101,30 @@ public class JsonToJavaObject extends TestBase {
 
         Assertions.assertEquals(4,region.getCount());
         Assertions.assertEquals("Americas",region.getItems().get(1).getRegion_name());
+        Assertions.assertEquals("Americas",response.path("items[1].region_name"));
 
+    }
+
+    @Test
+    public void test7(){
+        Response response = RestAssured.given().accept(ContentType.JSON)
+                .get("http://3.216.30.92:1000/ords/hr/jobs");
+
+        response.prettyPrint();
+
+        JsonPath jsonPath = response.jsonPath();
+
+        Items items = response.as(Items.class);
+        Jobs job5 = items.getJobs().get(4);
+
+        System.out.println(items);
+
+        Jobs job1 = jsonPath.getObject("items[1]", Jobs.class);
+        System.out.println(job1);
+
+        Jobs job2 = jsonPath.getObject("items[2]", Jobs.class);
+
+        Jobs job3 = jsonPath.getObject("items[3]", Jobs.class);
     }
 
 
