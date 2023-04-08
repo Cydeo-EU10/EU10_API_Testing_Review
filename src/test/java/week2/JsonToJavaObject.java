@@ -1,9 +1,11 @@
 package week2;
 
+import io.restassured.*;
 import io.restassured.http.*;
 import io.restassured.path.json.*;
 import io.restassured.response.*;
 import org.junit.jupiter.api.*;
+import week2.POJO.*;
 
 import java.util.*;
 
@@ -59,7 +61,33 @@ public class JsonToJavaObject extends TestBase {
 
 
 
+    // convert response to custom class object
+    // single spartan example
+    @Test
+    public void test4(){
+        Response response = RestAssured.given().accept(ContentType.JSON)
+                .when().get("http://3.216.30.92:8000/api/spartans/30");
 
+        response.prettyPrint();
+
+        Spartan spartan30 = response.as(Spartan.class);
+        System.out.println(spartan30);
+    }
+
+
+    // search spartan response
+    @Test
+    public void test5(){
+        Response response = RestAssured.given().accept(ContentType.JSON)
+                .and().queryParam("nameContains","Da")
+                .when().get("http://3.216.30.92:8000/api/spartans/search");
+
+        response.prettyPrint();
+
+        SpartanSearch spartanNameDa = response.as(SpartanSearch.class);
+
+        System.out.println(spartanNameDa);
+    }
 
 
 }
