@@ -95,6 +95,13 @@ public class JsonToJavaObject extends TestBase {
                 .get("http://3.216.30.92:1000/ords/hr/regions");
 
         response.prettyPrint();
+
+        Region region = response.as(Region.class);
+        System.out.println(region);
+
+        Assertions.assertEquals(4,region.getCount());
+        Assertions.assertEquals("Americas",region.getItems().get(1).getRegion_name());
+
     }
 
 

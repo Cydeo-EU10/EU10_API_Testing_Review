@@ -5,9 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="32219fdc-887a-405a-a1b6-4686e6ea345b" name="Changes" comment="week 2 second push">
-      <change afterPath="$PROJECT_DIR$/src/test/java/week2/POJO/Spartan.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/week2/POJO/SpartanSearch.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/week2/POJO/Link.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/week2/POJO/Region.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/week2/POJO/Regions.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/week2/JsonToJavaObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/week2/JsonToJavaObject.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -53,23 +55,7 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="JUnit.JsonToJavaObject.test5">
-    <configuration name="JsonToJavaObject.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="EU10_API_Testing_Review" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="week2.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="week2" />
-      <option name="MAIN_CLASS_NAME" value="week2.JsonToJavaObject" />
-      <option name="METHOD_NAME" value="test1" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.JsonToJavaObject.test6">
     <configuration name="JsonToJavaObject.test2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="EU10_API_Testing_Review" />
       <extension name="coverage">
@@ -134,13 +120,29 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="JsonToJavaObject.test6" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="EU10_API_Testing_Review" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="week2.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="week2" />
+      <option name="MAIN_CLASS_NAME" value="week2.JsonToJavaObject" />
+      <option name="METHOD_NAME" value="test6" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.JsonToJavaObject.test6" />
         <item itemvalue="JUnit.JsonToJavaObject.test5" />
         <item itemvalue="JUnit.JsonToJavaObject.test4" />
         <item itemvalue="JUnit.JsonToJavaObject.test3" />
         <item itemvalue="JUnit.JsonToJavaObject.test2" />
-        <item itemvalue="JUnit.JsonToJavaObject.test1" />
       </list>
     </recent_temporary>
   </component>
@@ -153,7 +155,7 @@
       <option name="presentableId" value="Default" />
       <updated>1680371938519</updated>
       <workItem from="1680371939664" duration="3790000" />
-      <workItem from="1680960179874" duration="13652000" />
+      <workItem from="1680960179874" duration="15472000" />
     </task>
     <task id="LOCAL-00001" summary="project created">
       <created>1680374883709</created>
@@ -225,7 +227,21 @@
       <option name="project" value="LOCAL" />
       <updated>1680972115133</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="week 2 second push">
+      <created>1680979032746</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1680979032746</updated>
+    </task>
+    <task id="LOCAL-00012" summary="week 2 second push">
+      <created>1680979175656</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1680979175657</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
