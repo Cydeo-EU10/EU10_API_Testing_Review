@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="32219fdc-887a-405a-a1b6-4686e6ea345b" name="Changes" comment="week 2 first push">
-      <change afterPath="$PROJECT_DIR$/src/test/java/week2/JsonPathReview.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="32219fdc-887a-405a-a1b6-4686e6ea345b" name="Changes" comment="week 2 second push">
+      <change beforePath="$PROJECT_DIR$/src/test/java/week2/JsonPathReview.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/week2/JsonPathReview.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,23 +50,7 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="JUnit.JsonPathReview.test2">
-    <configuration name="FirstTest.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="EU10_API_Testing_Review" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="week1.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="week1" />
-      <option name="MAIN_CLASS_NAME" value="week1.FirstTest" />
-      <option name="METHOD_NAME" value="test1" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.JsonPathReview.test3">
     <configuration name="FirstTest.test6" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="EU10_API_Testing_Review" />
       <extension name="coverage">
@@ -116,6 +99,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="JsonPathReview.test3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="EU10_API_Testing_Review" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="week2.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="week2" />
+      <option name="MAIN_CLASS_NAME" value="week2.JsonPathReview" />
+      <option name="METHOD_NAME" value="test3" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="PathParams.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="EU10_API_Testing_Review" />
       <extension name="coverage">
@@ -134,11 +133,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.JsonPathReview.test3" />
         <item itemvalue="JUnit.JsonPathReview.test2" />
         <item itemvalue="JUnit.JsonPathReview.test1" />
         <item itemvalue="JUnit.PathParams.test1" />
         <item itemvalue="JUnit.FirstTest.test6" />
-        <item itemvalue="JUnit.FirstTest.test1" />
       </list>
     </recent_temporary>
   </component>
@@ -151,7 +150,7 @@
       <option name="presentableId" value="Default" />
       <updated>1680371938519</updated>
       <workItem from="1680371939664" duration="3790000" />
-      <workItem from="1680960179874" duration="3696000" />
+      <workItem from="1680960179874" duration="4000000" />
     </task>
     <task id="LOCAL-00001" summary="project created">
       <created>1680374883709</created>
@@ -181,7 +180,14 @@
       <option name="project" value="LOCAL" />
       <updated>1680963541339</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="week 2 second push">
+      <created>1680964763656</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1680964763656</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -191,6 +197,7 @@
     <MESSAGE value="project created" />
     <MESSAGE value="first test" />
     <MESSAGE value="week 2 first push" />
-    <option name="LAST_COMMIT_MESSAGE" value="week 2 first push" />
+    <MESSAGE value="week 2 second push" />
+    <option name="LAST_COMMIT_MESSAGE" value="week 2 second push" />
   </component>
 </project>

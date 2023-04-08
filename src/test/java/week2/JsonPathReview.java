@@ -25,8 +25,6 @@ public class JsonPathReview {
         System.out.println(jsonPath.getInt("id"));
         System.out.println(jsonPath.getLong("phone"));
 
-
-
     }
 
     @Test
@@ -43,5 +41,17 @@ public class JsonPathReview {
         List<Integer> ids = jsonPath.getList("id");
 
 
+    }
+
+    @Test
+    public void test3(){
+
+        Response response = RestAssured.given().accept(ContentType.JSON)
+                .when().get("https://api.zippopotam.us/us/90210");
+
+        JsonPath jsonPath = response.jsonPath();
+
+        String countryAbb = jsonPath.getString("country");
+        System.out.println(countryAbb);
     }
 }
