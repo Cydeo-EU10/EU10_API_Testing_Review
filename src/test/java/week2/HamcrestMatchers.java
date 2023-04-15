@@ -8,10 +8,11 @@ import org.junit.jupiter.api.*;
 
 import java.util.*;
 
+import static io.restassured.RestAssured.given;
 import static org.hamcrest.MatcherAssert.*;
 import static org.hamcrest.Matchers.*;
 
-public class HamcrestMatchers {
+public class HamcrestMatchers extends TestBase {
 
     @Test
     public void test1(){
@@ -44,12 +45,23 @@ public class HamcrestMatchers {
 
     @Test
     public void test2(){
-        RestAssured.given().accept(ContentType.JSON)
-                .when().get("http://3.216.30.92:8000/api/spartans/1")
+        given().accept(ContentType.JSON)
+                .when().get("http://3.216.30.92:8000/api/spartans/15")
                 .then().statusCode(200)
                 .and().header("Content-Type",is("application/json"))
-                .and().body("id",is(1),
+                .and().body("id",is(15),
                         "name",equalTo("Meade"),
                         "gender",not("Female"));
+
+
+
+    }
+
+    @Test
+    public void test3(){
+        String names = given().accept(ContentType.JSON)
+                .when().get("/api/spartans")
+                .then().statusCode(200)
+                .extract().jsonPath().getString("[10].name");
     }
 }
