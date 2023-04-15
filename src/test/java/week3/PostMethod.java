@@ -13,6 +13,7 @@ import static io.restassured.RestAssured.given;
 public class PostMethod extends TestBase {
 
 
+    int id;
     // add a new spartan  -- provide body as String
     @Test
     public void test1(){
@@ -26,6 +27,8 @@ public class PostMethod extends TestBase {
                 .and().contentType(ContentType.JSON)
                 .and().body(body)
                 .when().post("/api/spartans");
+
+        id = response.path("data.id");
 
         response.prettyPrint();
         Assertions.assertEquals(201, response.statusCode());
