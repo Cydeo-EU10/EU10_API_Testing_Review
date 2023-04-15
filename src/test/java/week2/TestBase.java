@@ -6,7 +6,7 @@ import static io.restassured.RestAssured.baseURI;
 
 public class TestBase {
 
-//    @BeforeAll
+    @BeforeAll
     public static void init(){
         baseURI = "http://3.216.30.92:8000";
     }

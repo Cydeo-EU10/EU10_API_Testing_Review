@@ -17,6 +17,9 @@ public class ZipCodeTest {
         response.prettyPrint();
 
         ByPostCode byPostCode = response.as(ByPostCode.class);
+
+        Assertions.assertEquals("99950",byPostCode.getPostCode());
+
         System.out.println(byPostCode);
     }
 }
