@@ -5,8 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="32219fdc-887a-405a-a1b6-4686e6ea345b" name="Changes" comment="week 4 third push">
-      <change afterPath="$PROJECT_DIR$/src/test/resources/SpartanDataPOST.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/week4/ParametrizeTesting.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/week4/ParametrizeTesting.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/week4/SpartanSpecBase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/week4/SpecTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,7 +58,7 @@
       <recent name="C:\Users\Zulpikar\IdeaProjects\EU10_API_Testing_Review\src\test\resources" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ParametrizeTesting.csvFileSource">
+  <component name="RunManager" selected="JUnit.SpecTest.test1">
     <configuration name="ParametrizeTesting.csvFileSource" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="EU10_API_Testing_Review" />
       <extension name="coverage">
@@ -122,7 +123,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TimeTest.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SpecTest.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="EU10_API_Testing_Review" />
       <extension name="coverage">
         <pattern>
@@ -131,7 +132,7 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="week4" />
-      <option name="MAIN_CLASS_NAME" value="week4.TimeTest" />
+      <option name="MAIN_CLASS_NAME" value="week4.SpecTest" />
       <option name="METHOD_NAME" value="test1" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
@@ -140,11 +141,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.SpecTest.test1" />
         <item itemvalue="JUnit.ParametrizeTesting.csvFileSource" />
         <item itemvalue="JUnit.ParametrizeTesting.csvSource" />
         <item itemvalue="JUnit.ParametrizeTesting.methodSource" />
         <item itemvalue="JUnit.ParametrizeTesting.test1" />
-        <item itemvalue="JUnit.TimeTest.test1" />
       </list>
     </recent_temporary>
   </component>
@@ -160,7 +161,7 @@
       <workItem from="1680960179874" duration="17318000" />
       <workItem from="1681522048274" duration="600000" />
       <workItem from="1681567115180" duration="11154000" />
-      <workItem from="1682171237363" duration="8295000" />
+      <workItem from="1682171237363" duration="9779000" />
     </task>
     <task id="LOCAL-00001" summary="project created">
       <created>1680374883709</created>
@@ -337,7 +338,14 @@
       <option name="project" value="LOCAL" />
       <updated>1682180223679</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="week 4 third push">
+      <created>1682181077171</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1682181077171</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
