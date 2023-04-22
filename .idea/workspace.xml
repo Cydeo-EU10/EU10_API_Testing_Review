@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="32219fdc-887a-405a-a1b6-4686e6ea345b" name="Changes" comment="week 4 third push">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/SpartanDataPOST.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/week4/ParametrizeTesting.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/week4/ParametrizeTesting.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -39,19 +39,41 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/Zulpikar/IdeaProjects/EU10_API_Testing_Review/src/test/resources",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
-  <component name="RunManager" selected="JUnit.ParametrizeTesting.csvSource">
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Zulpikar\IdeaProjects\EU10_API_Testing_Review\src\test\resources" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.ParametrizeTesting.csvFileSource">
+    <configuration name="ParametrizeTesting.csvFileSource" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="EU10_API_Testing_Review" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="week4.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="week4" />
+      <option name="MAIN_CLASS_NAME" value="week4.ParametrizeTesting" />
+      <option name="METHOD_NAME" value="csvFileSource(java.lang.String,java.lang.String,java.lang.Long)" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ParametrizeTesting.csvSource" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="EU10_API_Testing_Review" />
       <extension name="coverage">
@@ -100,22 +122,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SSLTest.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="EU10_API_Testing_Review" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="week4.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="week4" />
-      <option name="MAIN_CLASS_NAME" value="week4.SSLTest" />
-      <option name="METHOD_NAME" value="test1" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="TimeTest.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="EU10_API_Testing_Review" />
       <extension name="coverage">
@@ -134,11 +140,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ParametrizeTesting.csvFileSource" />
         <item itemvalue="JUnit.ParametrizeTesting.csvSource" />
         <item itemvalue="JUnit.ParametrizeTesting.methodSource" />
         <item itemvalue="JUnit.ParametrizeTesting.test1" />
         <item itemvalue="JUnit.TimeTest.test1" />
-        <item itemvalue="JUnit.SSLTest.test1" />
       </list>
     </recent_temporary>
   </component>
@@ -154,7 +160,7 @@
       <workItem from="1680960179874" duration="17318000" />
       <workItem from="1681522048274" duration="600000" />
       <workItem from="1681567115180" duration="11154000" />
-      <workItem from="1682171237363" duration="7482000" />
+      <workItem from="1682171237363" duration="8295000" />
     </task>
     <task id="LOCAL-00001" summary="project created">
       <created>1680374883709</created>
@@ -324,7 +330,14 @@
       <option name="project" value="LOCAL" />
       <updated>1682178510760</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="week 4 third push">
+      <created>1682180223679</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1682180223679</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

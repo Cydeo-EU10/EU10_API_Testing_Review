@@ -10,6 +10,8 @@ import week2.*;
 
 import java.util.*;
 
+import static io.restassured.RestAssured.given;
+
 public class ParametrizeTesting extends TestBase {
 
     /*
@@ -25,7 +27,7 @@ public class ParametrizeTesting extends TestBase {
     @ParameterizedTest
     @ValueSource(ints = {4, 6, 7, 8, 9})
     public void valueSource(int id) {
-        Response response = RestAssured.given().accept(ContentType.JSON)
+        Response response = given().accept(ContentType.JSON)
                 .when().get("http://3.216.30.92:8000/api/spartans/" + id + "");
         response.prettyPrint();
     }
@@ -40,7 +42,7 @@ public class ParametrizeTesting extends TestBase {
     @ParameterizedTest
     @MethodSource("getPartialNames")
     public void methodSource(String names) {
-        Response response = RestAssured.given().accept(ContentType.JSON)
+        Response response = given().accept(ContentType.JSON)
                 .and().queryParam("nameContains", names)
                 .when().get("http://3.216.30.92:8000/api/spartans/search");
 
@@ -49,14 +51,32 @@ public class ParametrizeTesting extends TestBase {
 
     @ParameterizedTest
     @CsvSource({"8,Rodolfo",
-               "13,Jaimie",
-               "21,Mark"})
+            "13,Jaimie",
+            "21,Mark"})
     public void csvSource(int id, String name) {
-        Response response = RestAssured.given().accept(ContentType.JSON)
+        Response response = given().accept(ContentType.JSON)
                 .pathParam("id", id)
                 .when().get("/api/spartans/{id}");
 
         Assertions.assertEquals(name, response.path("name"));
+    }
+
+    @ParameterizedTest
+    @CsvFileSource(resources = "/SpartanDataPOST.csv", numLinesToSkip = 1)
+    public void csvFileSource(String name, String gender, Long phone) {
+        Map<String, Object> body = new HashMap<>();
+        body.put("name",name);
+        body.put("gender",gender);
+        body.put("phone",phone);
+
+        Response response = given().accept(ContentType.JSON)
+                .and().contentType(ContentType.JSON)
+                .and().body(body)
+                .when().post("/api/spartans");
+
+        response.prettyPrint();
+
+
     }
 
 
