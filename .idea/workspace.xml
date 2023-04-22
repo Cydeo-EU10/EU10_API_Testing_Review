@@ -4,10 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="32219fdc-887a-405a-a1b6-4686e6ea345b" name="Changes" comment="week 5 second push">
-      <change afterPath="$PROJECT_DIR$/src/test/java/week3/BookItAuth.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/week4/XmlReview.java" afterDir="false" />
+    <list default="true" id="32219fdc-887a-405a-a1b6-4686e6ea345b" name="Changes" comment="week 4 first push">
+      <change afterPath="$PROJECT_DIR$/src/test/java/week4/SchemaValidation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/singleSpartanSchema.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,33 +53,33 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="JUnit.XmlReview.test3">
-    <configuration name="BookItAuth.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.SchemaValidation.test2">
+    <configuration name="SchemaValidation.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="EU10_API_Testing_Review" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="week3.*" />
+          <option name="PATTERN" value="week4.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="week3" />
-      <option name="MAIN_CLASS_NAME" value="week3.BookItAuth" />
+      <option name="PACKAGE_NAME" value="week4" />
+      <option name="MAIN_CLASS_NAME" value="week4.SchemaValidation" />
       <option name="METHOD_NAME" value="test1" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SpartanAuth.test2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SchemaValidation.test2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="EU10_API_Testing_Review" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="week3.*" />
+          <option name="PATTERN" value="week4.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="week3" />
-      <option name="MAIN_CLASS_NAME" value="week3.SpartanAuth" />
+      <option name="PACKAGE_NAME" value="week4" />
+      <option name="MAIN_CLASS_NAME" value="week4.SchemaValidation" />
       <option name="METHOD_NAME" value="test2" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
@@ -135,11 +136,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.SchemaValidation.test2" />
+        <item itemvalue="JUnit.SchemaValidation.test1" />
         <item itemvalue="JUnit.XmlReview.test3" />
         <item itemvalue="JUnit.XmlReview.test2" />
         <item itemvalue="JUnit.XmlReview.test1" />
-        <item itemvalue="JUnit.BookItAuth.test1" />
-        <item itemvalue="JUnit.SpartanAuth.test2" />
       </list>
     </recent_temporary>
   </component>
@@ -155,7 +156,7 @@
       <workItem from="1680960179874" duration="17318000" />
       <workItem from="1681522048274" duration="600000" />
       <workItem from="1681567115180" duration="11154000" />
-      <workItem from="1682171237363" duration="2648000" />
+      <workItem from="1682171237363" duration="4460000" />
     </task>
     <task id="LOCAL-00001" summary="project created">
       <created>1680374883709</created>
@@ -304,7 +305,14 @@
       <option name="project" value="LOCAL" />
       <updated>1681584739244</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="week 4 first push">
+      <created>1682174719922</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1682174719922</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -318,6 +326,7 @@
     <MESSAGE value="week 3 first push" />
     <MESSAGE value="week 3 second push" />
     <MESSAGE value="week 5 second push" />
-    <option name="LAST_COMMIT_MESSAGE" value="week 5 second push" />
+    <MESSAGE value="week 4 first push" />
+    <option name="LAST_COMMIT_MESSAGE" value="week 4 first push" />
   </component>
 </project>
